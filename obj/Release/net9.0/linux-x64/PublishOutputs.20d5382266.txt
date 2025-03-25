@@ -1,0 +1,2 @@
+/home/duya25446/Documents/C#/ImageServer/bin/Release/net9.0/linux-x64/publish/ImageServer.pdb
+/home/duya25446/Documents/C#/ImageServer/bin/Release/net9.0/linux-x64/publish/ImageServer
