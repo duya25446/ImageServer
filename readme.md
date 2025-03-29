@@ -158,7 +158,7 @@ This project is licensed under the MIT License
 
 ## 联系方式 | Contact
 
-如有问题或建议，请通过 Issues 页面联系们。
+如有问题或建议，请通过 Issues 页面联系我。
 
 For questions or suggestions, please contact me through the Issues page.
 
