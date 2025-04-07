@@ -22,12 +22,7 @@ public static class Program
         // Optimize thread pool settings
         ThreadPool.SetMinThreads(100, 100);
 
-#if DEBUG
-        var baseDir = AppDomain.CurrentDomain.BaseDirectory;
-#else
-    // 使用当前工作目录作为基础路径
-    var baseDir = Directory.GetCurrentDirectory();
-#endif
+        var baseDir = Directory.GetCurrentDirectory();
         var port = 23564;
 
         Host.CreateDefaultBuilder(args)
