@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ImageServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5ab09cac6d8288c236ef83949612de59b8cac161")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c664c10ab04f74e0af0e8883c0677c419f60f031")]
 [assembly: System.Reflection.AssemblyProductAttribute("ImageServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ImageServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

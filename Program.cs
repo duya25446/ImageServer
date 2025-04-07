@@ -22,7 +22,12 @@ public static class Program
         // Optimize thread pool settings
         ThreadPool.SetMinThreads(100, 100);
 
+#if DEBUG
         var baseDir = AppDomain.CurrentDomain.BaseDirectory;
+#else
+    // 使用当前工作目录作为基础路径
+    var baseDir = Directory.GetCurrentDirectory();
+#endif
         var port = 23564;
 
         Host.CreateDefaultBuilder(args)
@@ -128,6 +133,7 @@ public class ImageService
         {
             // Get requested path
             var requestedPath = request.Path.Value?.TrimStart('/') ?? string.Empty;
+            
 
             if (string.IsNullOrEmpty(requestedPath))
             {
@@ -142,10 +148,14 @@ public class ImageService
                 response.StatusCode = StatusCodes.Status403Forbidden;
                 return;
             }
-
+            // Console.WriteLine($"Base Directory: {BaseDirectory}");
+            // Console.WriteLine($"Requested File Path: {fullPath}");
+            // Console.WriteLine($"File Exists: {File.Exists(fullPath)}");
+            // Console.WriteLine($"Current Directory: {Directory.GetCurrentDirectory()}");
             // Check if file exists
             if (!File.Exists(fullPath))
             {
+                
                 response.StatusCode = StatusCodes.Status404NotFound;
                 return;
             }

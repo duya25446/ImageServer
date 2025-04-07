@@ -337,3 +337,4 @@
 /home/duya25446/Documents/C#/ImageServer/bin/Release/net9.0/linux-x64/System.Security.Cryptography.Xml.dll
 /home/duya25446/Documents/C#/ImageServer/bin/Release/net9.0/linux-x64/System.Threading.RateLimiting.dll
 /home/duya25446/Documents/C#/ImageServer/obj/Release/net9.0/linux-x64/ImageServer.csproj.AssemblyReference.cache
+/home/duya25446/Documents/C#/ImageServer/obj/Release/net9.0/linux-x64/ImageServer.sourcelink.json

@@ -114,6 +114,39 @@ In class `ImageService` you can adjust:
 - 缓存持续时间（默认：30分钟）| Cache duration (default: 30 minutes)
 - 客户端缓存时间（默认：1天）| Client-side cache time (default: 1 day)
 
+## ImageServer 更新记录
+
+### 版本 1.0.1 (2025-04-07)
+#### 修复
+- 修复单文件部署时的路径解析问题
+- 添加条件编译宏定义区分开发和发布环境
+- 更改Release模式使用`Directory.GetCurrentDirectory()`获取当前工作目录
+- 解决发布模式下的404错误问题
+
+#### 技术细节
+```csharp
+#if DEBUG
+    var baseDir = AppDomain.CurrentDomain.BaseDirectory;
+#else
+    var baseDir = Directory.GetCurrentDirectory();
+#endif
+```
+
+### 版本 1.0.0 (初始版本)
+#### 功能
+- 实现基本的图片服务功能
+- 支持通过HTTP请求访问服务器上的图片文件
+- 简单的路由解析和文件提供机制
+
+#### 已知问题
+- 发布版本无法正确解析文件路径
+- 在单文件部署环境中路径解析异常
+- Release版本运行时静态文件404错误
+
+---
+
+*注: 版本1.0.1修复了初始版本中的所有关键路径解析问题。*
+
 ## 高级特性 | Advanced Features
 
 ### 缓存管理 | Cache Management

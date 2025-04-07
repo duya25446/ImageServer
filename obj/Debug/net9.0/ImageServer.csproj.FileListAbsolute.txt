@@ -20,3 +20,4 @@
 /home/duya25446/Documents/C#/ImageServer/bin/Debug/net9.0/Microsoft.Extensions.Primitives.dll
 /home/duya25446/Documents/C#/ImageServer/obj/Debug/net9.0/ImageServer.csproj.AssemblyReference.cache
 /home/duya25446/Documents/C#/ImageServer/obj/Debug/net9.0/ImageSer.6DF77095.Up2Date
+/home/duya25446/Documents/C#/ImageServer/obj/Debug/net9.0/ImageServer.sourcelink.json
